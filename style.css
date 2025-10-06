@@ -1,0 +1,1593 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a.active{
+  background-color: #204aa0;
+  color: whitesmoke;
+}
+
+
+#head{
+  width: 100%;
+  height: 10%;
+  display: flex;
+  align-items: flex-end;
+  margin: 0;
+  padding: 0;
+  background-color: #204aa0;
+
+}
+
+#head-img{
+  width: 20%;
+  height: 10%;
+}
+
+#head-p{
+  position: absolute;
+  top: 0;
+  right: 2em;   
+  font-family: 'Brush Script MT', cursive;
+  font-size: 4.5em; 
+  margin-top: 0.5em; 
+  color: whitesmoke;
+}
+#head-p-ar{
+  position: absolute; 
+  top: 0;
+  left: 60px;   
+  font-family: 'Brush Script MT', cursive;
+  font-size: 5rem; margin-top: 0.5em; color: whitesmoke;
+}
+
+nav{
+  width: 100%;
+}
+
+nav ul{ 
+  display: flex;
+  list-style-type: none;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+nav li{
+flex: 1;
+display: inline-block;
+  /* background-color: #407afe; */
+background-image: linear-gradient(#407afe,white);
+}
+
+nav ul li a{
+  display: block;
+  padding: 1em;
+  color: #437afc;
+  font-size: x-large;
+  text-decoration: none;
+  font-family: 'Brush Script MT', cursive;
+
+}
+
+    nav ul li ul  {
+      display: none;
+      position: absolute;
+      width: 20%;
+      z-index: 1000;
+      flex-direction: column;
+    }
+
+        nav ul li ul li{
+        background-image:radial-gradient(#204aa0,white );
+        color: white;
+        }
+
+    nav ul li ul li a{
+      color: white;
+    }
+
+    nav ul li a:hover{
+      border: 3px aliceblue solid;
+      color: aliceblue;
+      background-color: #204aa0;      
+    }    
+
+    nav ul li:hover ul {
+      display: flex;
+      flex-direction: column;
+
+    }
+
+    nav ul li ul li a:hover {
+      color: aliceblue;
+      background-color: #204aa0;
+    }
+
+#main-index{
+  margin-top: 8rem;
+}
+#slideshow {
+  width: 100%;
+  height: 80vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  transition: background-image 1.5s linear;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+    margin-top: 2em;
+
+}
+
+.slide-text {
+  position: absolute;
+  bottom: 0vh;
+  left: 0px;
+  color: rgb(4, 3, 3);
+  font-size: 1.5rem;
+  background: rgba(255, 255, 253, 0.7);
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  text-align: center;
+}
+
+#div-main{
+  width: 100%; 
+  height: 100%; 
+  display: grid; 
+  grid-template-columns: repeat(10,10%); 
+  grid-template-areas: 'h1 h1 h1 h1 h1 h1 h1 h2 h2 h2';
+}
+#main-serv{
+  width: 96%; 
+  margin-top: 8rem;  
+  background-color: rgba(66, 121, 255, 0.2); 
+  border-radius: 1rem; grid-area: h1; padding: 1rem;
+}
+#main-aside{
+  width: 100%; 
+  height: 94vh; 
+  grid-area: h2; 
+  margin-top: 8rem;
+}
+article{
+  text-align: justify; 
+  font-size: large;
+}
+article h3{
+  border-left: 6px solid #204aa0; 
+  padding-left: 4px;
+}
+.serv-h3-ar{
+  border: 0;
+  border-right: 6px solid #204aa0; 
+  padding-right: 4px; 
+}
+#div-main-img{
+  width: 100%; height: 100%; 
+  background-image: url(/11.avif); 
+  background-size: cover; 
+  border-radius: 1rem;
+}
+.card-container {
+  display: flex;
+   justify-content: space-between;
+   gap: 6rem;
+ /*   padding: 2rem;
+ */  flex-wrap: wrap;
+  margin-top: 6em;
+}
+
+.flip-card {
+  width: 20vw;
+  height: 50vh;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 15px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.flip-card-front img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.flip-card-front h2{
+  position: absolute;
+  top: 0;
+  left: 0;
+    color: rgb(4, 3, 3);
+  font-size: 1.5rem;
+  background: rgba(255, 255, 253, 0.7);
+}
+
+.card-front-h2{
+    position: absolute;
+  top: 0;
+  right: 0;
+  width: 60%;
+}
+
+.flip-card-back {
+  background-color: #333533;
+  color: white;
+  transform: rotateY(180deg);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.flip-card-back h1 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.flip-card-back p {
+    color: wheat;
+  font-size: 1.1rem;
+}
+
+#location-container{
+  position: relative;
+  width: 100%;
+  height: 40vh;
+  margin-top: 8rem;
+  background-image:linear-gradient(#204aa0, white) ;
+}
+
+#location-map{
+  width: 30%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+#location-text h2{
+  text-align: center; 
+  margin-top: 2rem;
+}
+
+#location-container div p{
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+#location-text{
+  width: 50%;
+  height: 100%;
+  margin-top: 8px;
+  padding-top: 2px;
+}
+
+ footer{
+    margin-top: 8rem;
+  display: flex;
+  position: relative;
+  width: 100%;
+  background-image:linear-gradient(white, #204aa0) ;
+}
+#footer{
+  width: 40%;
+  height: 10%;
+} 
+
+footer div img{
+  width: 50%;
+  opacity: 0.5;
+  margin-top: 1em;
+} 
+
+#footer-p{
+  position: absolute; 
+  bottom: 0;
+  right:2em;   
+  font-family: 'Brush Script MT', cursive;
+  font-size: 5rem; margin-top: 0.5em;
+  color: rgba(255, 255, 255, 0.5);
+}
+.footer-p-ar{
+  position: absolute; 
+  bottom: 4rem;
+   left: 6rem;
+    font-family: 'Brush Script MT', cursive;
+  font-size: 5rem; margin-top: 0.5em;
+  color: rgba(255, 255, 255, 0.8);
+}
+#fo{
+  height: 10%;
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  text-align: center;
+  align-items: center; 
+  gap: 20px; 
+  border-bottom: 2px double black;
+  margin-bottom: 1em;
+}
+#fo-ar{
+  height: 10%;
+  display: flex;
+  position: absolute;
+  bottom: 0;  
+  left: 0;
+  text-align: center;
+  align-items: center; 
+  gap: 20px; 
+  border-bottom: 2px double black;
+  margin-bottom: 1em;
+}
+#fo-ar a{
+  margin-bottom: 1em;
+  width: 44px;
+  height: 44px; 
+}
+
+#fo a{
+  margin-bottom: 1em;
+  width: 44px;
+  height: 44px;
+
+}
+
+#h1-team{
+  margin-left: 0.5rem;
+  padding: 0.5rem;
+  border-left: 12px #204aa0 solid;
+}
+
+#team-main{
+  margin-top: 8rem;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-areas: "head head head" "first first second" "dr dr dr";
+  
+}
+
+#first-article{
+  grid-area: first;
+  margin-left: 0.5rem;
+  padding: 0.5rem;
+  background-image:radial-gradient(#427afd,white );
+}
+
+#second-article{
+  grid-area: second;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  padding: 0.5rem;
+  background-image:radial-gradient(#427afd,white );
+}
+
+#dr-container{
+  margin-top: 6rem;
+  height: 60vh;
+  grid-area: dr;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  justify-content: space-between;
+  align-content: space-between;
+}
+
+.dr{
+  margin: 2rem;
+}
+
+.dr img{
+  width: 100%;
+  height: 60%;
+  border-radius: 50%;
+}
+
+.dr a{
+  display: block;
+  color: #437afc;
+  font-size: xx-large;
+  text-decoration: none;
+  text-align: center;
+    font-family: 'Brush Script MT', cursive;
+}
+
+article  p{
+  font-size: x-large;
+  text-decoration: none;
+  text-align: center;
+  font-family: 'Brush Script MT', cursive;
+}
+
+
+
+
+/*----------------------------------------HASSAN.HTML--------------------------------*/
+
+#do-fr-div{
+  margin-top: 8rem; 
+  display: flex;
+  justify-content: space-between; 
+  background-image:radial-gradient(#437afc,white );
+}
+#do-fr-div div img{
+  width: 260px; 
+  height: 260px;
+}
+
+#do-fr-div p{
+  text-align: justify; 
+  margin: 4rem; 
+  font-size: 1.8em;
+}
+
+#container-hassan div p{
+  font-size: 1.25rem;
+  padding: 0.6rem;
+  text-align: center;
+}
+
+#container-hassan{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-areas: "ha he he" "ho he he" "hi he he";
+  margin-top: 8rem;
+  width: 100%;
+  height: 100vh;
+}
+
+
+#hassan1{
+/*   margin-right: 10vw;
+ */  
+  grid-area: he;
+  width: 60vw;
+  height: 100vh;
+  background-color: #437afc;
+  border-radius: 0 40% 0 40%;
+  background-image: url(/hassan/ordinary-busy-day-surgeon.jpg);
+  background-size: cover;
+
+}
+#rabee1{
+    grid-area: he;
+  width: 60vw;
+  height: 100vh;
+  background-color: #437afc;
+  border-radius: 0 40% 0 40%;
+  background-image: url(/hassan/2.jpg);
+  background-size: cover;
+}
+
+#nawara1{
+      grid-area: he;
+  width: 60vw;
+  height: 100vh;
+  background-color: #437afc;
+  border-radius: 0 40% 0 40%;
+  background-image: url(/hassan/4.jpg);
+  background-size: cover;
+}
+
+#moh1{
+        grid-area: he;
+  width: 60vw;
+  height: 100vh;
+  background-color: #437afc;
+  border-radius: 0 40% 0 40%;
+  background-image: url(/hassan/3.avif);
+  background-size: cover;
+}
+
+#hassan2{
+  grid-area: ha;
+  width: 39vw;
+  height: 33vh;
+  background-image:radial-gradient(#437afc,white );
+}
+
+#hassan3{
+  grid-area: ho;
+  width: 39vw;
+  height: 33vh;
+  background-image:radial-gradient(#437afc,white );
+}
+
+#hassan4{
+  grid-area: hi;
+  width: 39vw;
+  height: 33vh;
+  background-image:radial-gradient(#437afc,white );
+}
+
+.inp{
+ /*  padding-right: 6rem;   */
+  width: 100%;
+  padding: 0;
+  padding-top: 2rem;
+  margin-bottom: 2rem;
+  text-align: left;
+  border: none;
+  border-bottom: 4px solid gray;
+  font-size: 1.5em;
+}
+#contact-h1{
+  text-align: center;  
+  background-image:radial-gradient(#437afc,white ); 
+  padding-top: 8rem; 
+  margin: 0; 
+  margin-top: 8rem; 
+  padding-bottom: 6rem; 
+}
+#main-contact{
+  margin-top: 8rem;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-areas: "h h h h" "fr fr cl cl" "fr fr dr dr";
+  justify-content: space-between;
+}
+
+#form-contact{
+  grid-area: fr;
+  margin: 2rem;
+}
+
+#clinic-contact{
+  grid-area: cl;
+  margin: 1rem;
+  background-image:radial-gradient(#437afc,white );
+
+}
+#clinic-contact p{
+  font-size: xx-large;
+}
+#clinic-contact p img{
+  width: 25px; 
+  height: 25px;
+}
+
+#doctor-contact{
+  grid-area: dr;
+  margin: 1rem;
+    background-image:radial-gradient(#437afc,white );
+
+}
+#doctor-contact p{
+  font-size: xx-large;
+}
+#doctor-contact p img{
+  width: 25px; height: 25px;
+}
+#clinic-choose{
+  margin-top: 2rem; 
+  text-align: center; 
+  display: flex; 
+  gap: 18%;
+}
+
+    .btn {
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      font-weight: 600;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      margin: 0.5rem;
+    }
+
+    /* Submit button */
+    .btn-submit {
+      background: #2563eb; /* modern blue */
+      color: #fff;
+      width: 42%;
+      height: 60px; 
+      margin-right: 4em; 
+      margin-top: 4em;
+    }
+    .btn-submit:hover {
+      background: #1d4ed8;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 12px rgba(37, 99, 235, 0.25);
+    }
+
+        /* Reset button */
+    .btn-reset {
+    background: #2563eb; /* modern blue */
+    color: #fff;
+    width: 42%; 
+    height: 60px; 
+    margin-top: 4em;
+    }
+    .btn-reset:hover {
+      background: #1d4ed8;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 12px rgba(37, 99, 235, 0.25);
+    }
+
+    /* Accessibility: focus states */
+    .btn:focus {
+      outline: 3px solid #93c5fd;
+      outline-offset: 2px;
+    }
+
+
+    .dropdown {
+      width: 4%;
+      position: absolute;
+      display: inline-block;
+    }
+    .dropbtn {
+      background: rgba(255, 255, 255, 0.6);
+      padding: 10px 15px;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background: rgba(255, 255, 255, 0.9);
+      min-width: 150px;
+      box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+      border-radius: 8px;
+      z-index: 1;
+    }
+    .dropdown-content button {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      background: none;
+      text-align: left;
+      cursor: pointer;
+      font-size: 15px;
+    }
+    .dropdown-content button:hover {
+      background-color: #f1f1f1;
+    }
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    .flag {
+      width: 20px;
+      height: 14px;
+      margin-right: 8px;
+      vertical-align: middle;
+    }
+
+    @media (max-width:600px){
+      
+      #head-p{
+        font-size: 1.3rem;
+        top: 1rem;
+        left: 3rem;
+            }
+      #head-p-ar{ 
+          font-family: 'Brush Script MT', cursive;
+          font-size: 1.3rem; 
+          margin-top: 0.5em; color: whitesmoke;
+      }
+      #head-img{
+        width: 100%;
+        height: 50vh;
+      }
+      #head{
+        flex-wrap: wrap;
+      }
+      .dropdown{
+        width: 8%;
+      }
+      .dropbtn{
+        padding: 2px 3px;
+        width: 100%;
+      }
+      nav ul li{
+        margin: 0;
+        padding: 0;
+        width: 5vw;
+      }
+      nav ul li a{
+        font-size: 0.9rem;
+      }
+      nav ul li ul li {
+        width: 125%;
+    }
+    #slideshow{
+      height: 60vh;
+    }
+    .slide-text{
+      font-size: 1.1rem;
+    }
+    .card-container {
+  display: flex;
+   justify-content: space-between;
+   gap: 8rem;
+ /*   padding: 2rem;
+ */  flex-wrap: wrap;
+  margin-top: 10em;
+}
+
+.flip-card {
+  width: 100vw;
+  height: 70vh;
+  perspective: 1000px;
+}
+.flip-card-front h2{
+  width: 60%;
+  font-size: 1.3rem;
+  background: rgba(255, 255, 253, 0.7);
+
+}
+#location-container{
+  width: 100%;
+  height: 60vh;
+  margin-top: 8rem;
+  background-image:linear-gradient(#204aa0, white) ;
+}
+
+#location-map{
+  position: relative;
+  width: 100%;
+  height: 70%;
+
+}
+
+#location-container div p{
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+  text-align: center;
+}
+
+#location-text h2{
+  margin-top: 0.4rem;
+  font-size: 1.3rem;
+}
+
+#location-text{
+  display: block;
+  margin: 0;
+  margin-top: 0.3rem;
+  padding: 0;
+  width: 100%;
+}
+
+#div-main{
+  margin: 0;
+  padding: 0;
+  width: 100vw; 
+  height: 100%; 
+  display: block;
+}
+#main-serv{
+  width: 100%; 
+  padding: 0;
+  margin-top: 0;  
+  background-color: rgba(66, 121, 255, 0.2); 
+  border-radius: 1rem; 
+}
+
+#main-serv article{
+  padding: 1rem;
+  font-size: large;
+}
+
+#main-serv h1{
+  margin-top: 0;
+  padding-top: 1rem;
+  font-size: x-large;
+}
+#main-serv h2{
+  font-size: large;
+}
+#main-serv h3{
+  font-size: large;
+}
+#main-aside{
+  margin: 0;
+  padding: 0;
+  width: 100%; 
+  height: 70vh; 
+  margin-top: 8rem;
+}
+#div-main-img{
+  margin: 0;
+  padding: 0;
+  width: 100%; 
+  height: 100%; 
+  background-image: url(/11.avif); 
+  background-size: cover; 
+  border-radius: 1rem;
+}
+
+
+#footer{
+  margin: 0;
+  padding: 0;
+  width: 40%;
+  height: 25vh
+} 
+
+footer div img{
+  width: 50%;
+  opacity: 0.5;
+  margin-top: 1em;
+} 
+#footer-img{
+  margin: 0;
+  padding: 0;
+  width:88%;
+  height: 99%;
+}
+
+#footer-p{
+  position: absolute; 
+  bottom: 2rem;
+  right:2rem;   
+  font-family: 'Brush Script MT', cursive;
+  font-size: 1.3rem;
+  margin-top: 0.5em;
+  color: rgba(255, 255, 255, 0.5);
+}
+.footer-p-ar{
+  position: absolute; 
+  bottom: 4rem;
+   left: 2rem;
+    font-family: 'Brush Script MT', cursive;
+  font-size: 1.3rem; 
+  margin-top: 0.5em;
+  color: rgba(255, 255, 255, 0.8);
+}
+#fo{
+  height: 20%;
+  display: flex;
+  text-align: center;
+  align-items: center; 
+  gap: 0;
+  border-bottom: 2px double black;
+  margin-bottom: 1em;
+}
+
+#fo p{
+  font-size: 0.5rem;
+}
+
+#fo a{
+  margin-bottom: 1em;
+  width: 30px;
+  height: 30px;
+
+}
+#fo-ar{
+  height: 10%;
+  display: flex;
+  text-align: center;
+  align-items: center; 
+  gap: 0;
+  border-bottom: 2px double black;
+  margin-bottom: 1em;
+}
+#fo-ar a{
+  margin-bottom: 1em;
+  width: 30px;
+  height: 30px; 
+}
+/* our team*/
+#h1-team{
+  margin-left: 0.5rem;
+  padding: 0.5rem;
+  border-left: 12px #204aa0 solid;
+  font-size: x-large;
+}
+
+#team-main{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 4rem;
+  width: 100%;
+}
+
+#first-article{
+  margin-left: 0.5rem;
+  padding: 0.5rem;
+  background-image:radial-gradient(#427afd,white );
+  font-size: medium;
+}
+article section p{
+  font-size: medium;
+}
+
+#second-article{
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+    font-size: medium;
+  padding: 0.5rem;
+  background-image:radial-gradient(#427afd,white );
+}
+#second-article p{
+  font-size: medium;
+}
+#dr-container{
+  display: block;
+  margin-top: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  height: 200vh;
+}
+
+.dr{
+  margin-top: 0;
+  height: 50vh;
+}
+
+.dr img{
+  width: 100%;
+  height: 80%;
+  border-radius: 50%;
+}
+
+.dr a{
+  display: block;
+  color: #437afc;
+  font-size: x-large;
+  text-decoration: none;
+  text-align: center;
+    font-family: 'Brush Script MT', cursive;
+}
+
+#contact-h1{
+  text-align: center;  
+  background-image:radial-gradient(#437afc,white ); 
+  padding-top: 2rem; 
+  margin: 0; 
+  margin-top: 2rem; 
+  padding-bottom: 2rem; 
+  font-size: 1.5rem;
+}
+.form h2{
+  font-size: 1.3rem;
+}
+
+.inp{
+ /*  padding-right: 6rem;   */
+  width: 100%;
+  padding: 0;
+  padding-top: 1rem;
+  margin-bottom: 1rem;
+  text-align: left;
+  border: none;
+  border-bottom: 4px solid gray;
+  font-size: 1em;
+}
+#main-contact{
+  width: 100%;
+  margin-top: 4rem;
+  display: block;
+}
+
+#form-contact{
+  margin: 2rem;
+  font-size: 1rem;
+}
+#clinic-choose{
+  margin-top: 1rem; 
+  text-align: center; 
+  display: flex; 
+  gap: 0;
+}
+#clinic-contact p{
+  font-size: large;
+  padding: 1rem;
+}
+#clinic-contact p img{
+  width: 15px; 
+  height: 15px;
+}
+
+#clinic-contact{
+  font-size: 1rem;
+  margin: 1rem;
+  background-image:radial-gradient(#437afc,white );
+}
+
+#doctor-contact{
+  font-size: 1rem;
+  margin: 1rem;
+  background-image:radial-gradient(#437afc,white );
+}
+
+#doctor-contact p{
+  font-size: large;
+  padding: 1rem;
+}
+#doctor-contact p img{
+  width: 15px; 
+  height: 15px;
+}
+
+.btn {
+  display: inline;
+  margin: 0.5rem;
+  font-size: 1rem;
+  font-weight: 300;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#do-fr-div{
+  margin-top: 4rem; 
+  display: block; 
+  background-image:radial-gradient(#437afc,white );
+}
+
+#do-fr-div div img{
+  width: 100%;
+  height: 60vh;
+}
+
+#do-fr-div div h2{
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+#do-fr-div p{
+  font-size: 1rem;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+#container-hassan div p{
+  font-size: 0.9rem;
+  padding: 0.9rem;
+  margin: 1rem;
+  text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+#container-hassan{
+  margin-top: 4rem;
+  width: 100%;
+  display: block;
+  height: 1%;
+  margin-bottom: 0;
+}
+
+
+#hassan1{
+  width: 100vw;
+  height: 70vh;
+  background-color: #437afc;
+  border-radius: 0 40% 0 40%;
+  background-image: url(/hassan/ordinary-busy-day-surgeon.jpg);
+  background-size: cover;
+
+}
+#rabee1{
+  width: 100vw;
+  height: 70vh;
+  background-color: #437afc;
+  border-radius: 0 40% 0 40%;
+  background-image: url(/hassan/2.jpg);
+  background-size: cover;
+}
+
+#nawara1{
+  width: 100vw;
+  height: 70vh;
+  background-color: #437afc;
+  border-radius: 0 40% 0 40%;
+  background-image: url(/hassan/4.jpg);
+  background-size: cover;
+}
+
+#moh1{
+  width: 100vw;
+  height: 70vh;
+  background-color: #437afc;
+  border-radius: 0 40% 0 40%;
+  background-image: url(/hassan/3.avif);
+  background-size: cover;
+}
+
+#hassan2{
+  width: 100vw;
+  height: 50vh;
+  background-image:radial-gradient(#437afc,white );
+}
+
+#hassan3{
+  width: 100vw;
+  height: 50vh;
+  background-image:radial-gradient(#437afc,white );
+}
+
+#hassan4{
+  width: 100vw;
+  height: 50vh;
+  background-image:radial-gradient(#437afc,white );
+}
+
+  }
+
+  @media(min-width:601px) and (max-width:1024px){
+  #head-p{
+    position: absolute;
+    top: 0;
+    right: 2em;   
+    font-family: 'Brush Script MT', cursive;
+    font-size: 2.5em; 
+    margin-top: 0.5em; 
+    color: whitesmoke;
+  }
+#head-p-ar{ 
+  font-family: 'Brush Script MT', cursive;
+  font-size: 2.5rem; 
+  margin-top: 0.5em; color: whitesmoke;
+  }
+  #head{
+    height: 50vh;
+  }
+  .dropbtn{
+    padding: 2px 3px;
+    width: 100%;
+}
+
+  #head-img{
+    width: 50vw;
+    height: 50vh;
+  }
+  #head{
+    flex-wrap: wrap;
+  }
+
+  nav ul li ul  {
+    width: 25%;
+}
+  .card-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 0;
+    row-gap: 6rem;
+    flex-wrap: wrap;
+   margin-top: 10em;
+}
+
+.flip-card {
+  width: 40vw;
+  height: 60vh;
+  perspective: 1000px;
+}
+.flip-card-front h2{
+  width: 100%;
+  font-size: 1.3rem;
+  background: rgba(255, 255, 253, 0.7);
+
+}
+#div-main{
+  margin: 0;
+  padding: 0;
+  width: 100vw; 
+  height: 100%; 
+  display: block;
+}
+#main-serv{
+  width: 100%; 
+  padding: 0;
+  margin-top: 0;  
+  background-color: rgba(66, 121, 255, 0.2); 
+  border-radius: 1rem; 
+}
+
+#main-serv article{
+  padding: 1rem;
+  font-size: x-large;
+}
+
+#main-serv h1{
+  margin-top: 0;
+  padding-top: 1rem;
+  font-size: xx-large;
+}
+#main-serv h2{
+  font-size: x-large;
+}
+#main-serv h3{
+  font-size: x-large;
+}
+#main-aside{
+  margin: 0;
+  padding: 0;
+  width: 100%; 
+  height: 70vh; 
+  margin-top: 8rem;
+}
+#div-main-img{
+  margin: 0;
+  padding: 0;
+  width: 100%; 
+  height: 100%; 
+  background-image: url(/11.avif); 
+  background-size: cover; 
+  border-radius: 1rem;
+}
+
+#location-container{
+  width: 100%;
+  height: 70vh;
+  margin-top: 8rem;
+  background-image:linear-gradient(#204aa0, white) ;
+}
+
+#location-map{
+  position: relative;
+  width: 100%;
+  height: 70%;
+
+}
+
+#location-container div p{
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+  text-align: center;
+}
+
+#location-text h2{
+  margin-top: 0.4rem;
+  font-size: 1.3rem;
+}
+
+#location-text{
+  display: block;
+  margin: 0;
+  margin-top: 0.3rem;
+  padding: 0;
+  width: 100%;
+}
+
+#footer{
+  margin: 0;
+  padding: 0;
+  width: 40%;
+  height: 50vh
+} 
+
+footer div img{
+  width: 50%;
+  opacity: 0.5;
+  margin-top: 1em;
+} 
+#footer-img{
+  margin: 0;
+  padding: 0;
+  width:88%;
+  height: 99%;
+}
+
+#footer-p{
+  position: absolute; 
+  bottom: 2rem;
+  right:2rem;   
+  font-family: 'Brush Script MT', cursive;
+  font-size: 2.5rem;
+  margin-top: 0.5em;
+  color: rgba(255, 255, 255, 0.5);
+}
+.footer-p-ar{
+  position: absolute; 
+  bottom: 2rem;
+  left: 2rem;
+  font-family: 'Brush Script MT', cursive;
+  font-size: 2.3rem; 
+  margin-top: 0.5em;
+  color: rgba(255, 255, 255, 0.8);
+}
+#fo{
+  height: 20%;
+  display: flex;
+  text-align: center;
+  align-items: center; 
+  gap: 0;
+  border-bottom: 2px double black;
+  margin-bottom: 1em;
+}
+
+#fo p{
+  font-size: 1rem;
+}
+
+#fo a{
+  margin-bottom: 1em;
+  width: 30px;
+  height: 30px;
+
+}
+#fo-ar{
+  height: 10%;
+  display: flex;
+  text-align: center;
+  align-items: center; 
+  gap: 0;
+  border-bottom: 2px double black;
+  margin-bottom: 1em;
+}
+#fo-ar a{
+  margin-bottom: 1em;
+  width: 30px;
+  height: 30px; 
+}
+
+/* our team*/
+#h1-team{
+  margin-top: 2rem;
+  margin-left: 0.5rem;
+  padding: 0.5rem;
+  border-left: 12px #204aa0 solid;
+  font-size: 2rem;
+}
+
+#team-main{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 4rem;
+  width: 100%;
+}
+
+#first-article{
+  margin-left: 0.5rem;
+  padding: 0.5rem;
+  background-image:radial-gradient(#427afd,white );
+  font-size: 1.5rem;
+}
+article section p{
+  font-size: 1.5rem;
+}
+
+#second-article{
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+    font-size: 1.5rem;
+  padding: 0.5rem;
+  background-image:radial-gradient(#427afd,white );
+}
+#second-article p{
+  font-size: 1.5rem;
+}
+#dr-container{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 4rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  height: 110vh;
+}
+
+.dr{
+  margin-top: 0;
+  width: 30vw;
+  height: 50vh;
+}
+
+.dr img{
+  width: 100%;
+  height: 80%;
+  border-radius: 50%;
+}
+
+.dr a{
+  display: block;
+  color: #437afc;
+  font-size: x-large;
+  text-decoration: none;
+  text-align: center;
+    font-family: 'Brush Script MT', cursive;
+}
+
+#contact-h1{
+  text-align: center;  
+  background-image:radial-gradient(#437afc,white ); 
+  padding-top: 6rem; 
+  margin: 0; 
+  margin-top: 2rem; 
+  padding-bottom: 3rem; 
+  font-size: 1.5rem;
+}
+.form h2{
+  font-size: 1.3rem;
+}
+
+.inp{
+ /*  padding-right: 6rem;   */
+  width: 100%;
+  padding: 0;
+  padding-top: 1rem;
+  margin-bottom: 1rem;
+  text-align: left;
+  border: none;
+  border-bottom: 4px solid gray;
+  font-size: 1em;
+}
+#main-contact{
+  width: 100%;
+  margin-top: 4rem;
+  display: block;
+}
+
+#form-contact{
+  margin: 2rem;
+  font-size: 1.2rem;
+}
+#clinic-choose{
+  margin-top: 1rem; 
+  text-align: center; 
+  display: flex; 
+  gap: 20%;
+}
+#clinic-contact p{
+  font-size: x-large;
+  padding: 1rem;
+}
+#clinic-contact p img{
+  width: 20px; 
+  height: 20px;
+}
+
+#clinic-contact{
+  font-size: 1.1rem;
+  margin: 1rem;
+  background-image:radial-gradient(#437afc,white );
+}
+
+#doctor-contact{
+  font-size: 1.1rem;
+  margin: 1rem;
+  background-image:radial-gradient(#437afc,white );
+}
+
+#doctor-contact p{
+  font-size: x-large;
+  padding: 1rem;
+}
+#doctor-contact p img{
+  width: 20px; 
+  height: 20px;
+}
+
+    .btn {
+      display: inline;
+      margin: 1rem;
+      font-size: 1rem;
+      font-weight: 300;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+#do-fr-div{
+  margin-top: 8rem; 
+  display: block; 
+  background-image:radial-gradient(#437afc,white );
+}
+#do-fr-div div{
+  margin: 0;
+  padding: 0;
+  width: 60vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+#do-fr-div div img{
+  width: 100%;
+  height: 70vh;
+}
+
+#do-fr-div div h2{
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+#do-fr-div p{
+  font-size: 1.4rem;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+#container-hassan div p{
+  font-size: 1.39rem;
+  padding: 0.9rem;
+  margin: 1rem;
+  text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+#container-hassan{
+  margin-top: 4rem;
+  width: 100%;
+  display: block;
+  height: 1%;
+  margin-bottom: 0;
+}
+
+
+#hassan1{
+  width: 100vw;
+  height: 90vh;
+  background-color: #437afc;
+  border-radius: 0 40% 0 40%;
+  background-image: url(/hassan/ordinary-busy-day-surgeon.jpg);
+  background-size: cover;
+
+}
+#rabee1{
+  width: 100vw;
+  height: 90vh;
+  background-color: #437afc;
+  border-radius: 0 40% 0 40%;
+  background-image: url(/hassan/2.jpg);
+  background-size: cover;
+}
+
+#nawara1{
+  width: 100vw;
+  height: 90vh;
+  background-color: #437afc;
+  border-radius: 0 40% 0 40%;
+  background-image: url(/hassan/4.jpg);
+  background-size: cover;
+}
+
+#moh1{
+  width: 100vw;
+  height: 90vh;
+  background-color: #437afc;
+  border-radius: 0 40% 0 40%;
+  background-image: url(/hassan/3.avif);
+  background-size: cover;
+}
+
+#hassan2{
+  width: 100vw;
+  height: 60vh;
+  background-image:radial-gradient(#437afc,white );
+}
+
+#hassan3{
+  width: 100vw;
+  height: 60vh;
+  background-image:radial-gradient(#437afc,white );
+}
+
+#hassan4{
+  width: 100vw;
+  height: 60vh;
+  background-image:radial-gradient(#437afc,white );
+}
+
+
+  }

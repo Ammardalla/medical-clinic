@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Clinique Médica</title>
+</head>
+<body>
+
+
+  <header>
+          <div class="dropdown">
+    <button class="dropbtn"><img src="./web-settings.png" alt="" style="width: 100%;"></button>
+    <div class="dropdown-content">
+      <button onclick="switchLanguage('en')">
+        <img class="flag" src="https://flagcdn.com/w20/gb.png"> English
+      </button>
+      <button onclick="switchLanguage('ar')">
+        <img class="flag" src="https://flagcdn.com/w20/lb.png"> العربية
+      </button>
+      <button onclick="switchLanguage('fr')">
+        <img class="flag" src="https://flagcdn.com/w20/fr.png"> Français
+      </button>
+    </div>
+  </div>
+
+  <div id="head">
+  <img id="head-img" src="/doctor-2.jpg" alt="">
+  <p id="head-p">Nous prenons soin de votre santé</p>
+  <nav>
+    <ul>
+      <li><a href="index_fr.html" class="active">Accueil</a></li>
+      <li><a href="servecies_fr.html" target="_blank">Services que nous proposons</a></li>
+      <li><a href="team_fr.html" target="_blank">Notre équipe</a>
+               <ul id="team-bar">
+            <li><a href="/hassan_fr.html" target="_blank">Dr.Hassan</a></li>
+            <li><a href="/rabee_fr.html" target="_blank">Dr.Rabee</a></li>
+            <li><a href="/nawara_fr.html" target="_blank">Dr.Nawara</a></li>
+            <li><a href="/mohammad_fr.html" target="_blank">Dr.Mohammad</a></li>
+          </ul>  </li>
+      <li><a href="contact_fr.html" target="_blank">Contactez-nous</a></li>
+    </ul>
+  </nav>
+  </div>
+
+  </header>
+
+  <main id="main-index">
+
+  <div id="slideshow" class="slide">
+    <div class="slide-text" id="slideText"></div>
+  </div>
+
+  <div class="card-container">
+
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <h2>Horaires d’ouverture</h2>
+                    <img src="/card/12.avif" alt="Lemon restaurant" />
+                  </div>
+                  <div class="flip-card-back">
+                    <p>`Jours ouvrables : du lundi au vendredi. Horaires : de 11:00 à 3:00 et de 6:00 à 9:00.`</p>
+                  </div>
+              </div>
+            </div>
+
+             <div class="flip-card">
+              <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <h2>Jours de fermeture</h2>
+                    <img src="/card/9.avif" alt="Lemon restaurant" />
+                  </div>
+                  <div class="flip-card-back">
+                    <p>`Jours de fermeture : samedi et dimanche, sauf en cas d’urgence.`</p>
+                  </div>
+              </div>
+            </div>
+            
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <h2>Conseils généraux</h2>
+                    <img src="/card/pexels-saul-siguenza-355267816-28099427.jpg" alt="Lemon restaurant" />
+                  </div>
+                  <div class="flip-card-back">
+                    <p>`Ne négligez aucun symptôme que vous ressentez — consultez rapidement un médecin.`</p>
+                  </div>
+              </div>
+            </div>
+
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <h2>Pourquoi nous rendre visite</h2>
+                    <img src="/card/14.jpg" alt="Lemon restaurant" />
+                  </div>
+                  <div class="flip-card-back">
+                    <p>`Nous proposons une large gamme de services médicaux aux meilleurs tarifs, assurés par des médecins spécialistes hautement qualifiés.`</p>
+                  </div>
+              </div>
+            </div>
+  </div>
+
+  </main>
+
+  <div id="location-container">
+
+    <div id="location-map"> 
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d575.9756840000174!2d35.85371983475122!3d34.441458107123864!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1521f52cc206f023%3A0x85f4d8b88c2ad172!2z2KzYqNmEINmF2K3Ys9mG!5e1!3m2!1sen!2slb!4v1754605566059!5m2!1sen!2slb" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div> 
+    <div id="location-text"> 
+              <h2 style="text-align: center;">Notre emplacement :</h2>
+      <p>
+        Liban, Tripoli, rue de la Gare Nord, bâtiment Al-Zaher, au-dessus de Al-Amin Snack, premier étage<br>
+        <a href="https://maps.app.goo.gl/DQ7USEe2b7LZxzar5" target="_blank" style="text-decoration: none;">
+          📍 Voir sur Google Maps
+        </a>
+      </p>
+    </div>
+
+  </div>
+
+
+<footer style="background-color: #f8f8f8;">
+
+    <div id="footer">
+      <img id="footer-img" src="doctor-3.avif" alt="">
+    </div>
+    <p id="footer-p">Merci de votre visite</p>
+
+    <div id="fo">
+      <p>&copy; Clinique Médicale 2025</p>
+      <a href="https://facebook.com" target="_blank">
+      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="Facebook">
+      </a>
+      <a href="https://twitter.com" target="_blank"">
+      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/twitter.svg" alt="Twitter">
+      </a>
+      <a href="https://wa.me/your-number" target="_blank"">
+      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" alt="WhatsApp">
+      </a>
+      <a href="mailto:your.email@example.com" target="_blank">
+      <img src="gmail-logo.png" alt="Email">
+      </a>
+      <a href="https://www.linkedin.com/in/your-profile" target="_blank">
+      <img src="linkedin.png" alt="LinkedIn">
+      </a>
+    </div>
+  </footer>
+
+  <script src="index_fr.js"></script>
+</body>
+</html>

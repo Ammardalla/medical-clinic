@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Contactez_nous</title>
+</head>
+<body>
+
+
+  <header>
+
+  <div id="head">
+  <img id="head-img" src="/doctor-2.jpg" alt="">
+  <p id="head-p">Nous prenons soin de votre santé</p>
+  <nav>
+    <ul>
+      <li><a href="index_fr.html">Accueil</a></li>
+      <li><a href="servecies_fr.html">Services que nous proposons</a></li>
+      <li><a href="team_fr.html">Notre équipe</a>
+               <ul id="team-bar">
+            <li><a href="/hassan_fr.html">Dr.Hassan</a></li>
+            <li><a href="/rabee_fr.html">Dr.Rabee</a></li>
+            <li><a href="/nawara_fr.html">Dr.Nawara</a></li>
+            <li><a href="/mohammad_fr.html">Dr.Mohammad</a></li>
+          </ul>  </li>
+      <li><a href="contact_fr.html" class="active">Contactez-nous</a></li>
+    </ul>
+  </nav>
+  </div>
+
+  </header>
+
+      <h1 id="contact-h1">Contactez-nous :</h1>
+
+
+  <main id="main-contact" style="margin-top: 8rem;">
+
+    <div class="form" id="form-contact">
+      <h2 style="border-left:6px #204aa0 solid ; padding-left: 6px;">Remplissez le formulaire et nous vous recontacterons :</h2>
+    <form action="get">
+        <input type="text" name="first" id="first" class="inp" placeholder="Prénom" style="width: 49%; margin-right: 8px;">
+        <input type="text" name="last" id="last" class="inp" placeholder="Nom de famille" style="width: 49%;"><br>
+        <input type="email" name="email" id="email" class="inp" placeholder="Entrez votre adresse e-mail"><br>
+        <input type="tel" name="tell" id="tell" placeholder="Entrez votre numéro" class="inp"><br>
+        <label for="date" style="margin-right: 28px; font-size: 1.5em; text-align: center;">Indiquez l’heure de votre visite :</label>
+        <input type="datetime-local" name="date" id="date" style="width: 50%; height: 30px; text-align: center;">
+        <fieldset id="clinic-choose">
+            <legend style="font-weight: bold;">Choisissez la clinique</legend>
+            <label style="margin: 11px; ">
+                <input type="radio" name="clinic-choose" id="child">
+                <label for="child"> Pédiatre</label>
+            </label>
+            <label style="margin: 11px;">
+            <input type="radio" name="clinic-choose" id="serjury" style="margin: 0; padding: 0;">
+            <label for="serjury">Chirurgie générale</label>
+            </label>
+           <label style="margin: 11px;">
+            <input type="radio" name="clinic-choose" id="dentist" style="margin: 0; padding: 0;">
+            <label for="dentist">Dentiste</label>
+            </label>
+        </fieldset>
+        <fieldset id="pay-method" style="margin-top: 2rem; font-weight: bold;">
+          <legend style="text-align: center;">Méthode de paiement</legend>
+          <label style="display: block;">
+            <input type="radio" name="pay-method" id="credit">
+            <label for="credit">Carte de crédit</label>
+          </label>
+          <input type="number" placeholder="Le numéro de série se compose de 16 chiffres" style="width: 50%; margin-top: 1rem; margin-right: 1rem;">
+          <input type="number" placeholder="MM / DD">
+          <input type="text" name="owner" id="owner" placeholder="Nom du titulaire de la carte" style="width: 50%; margin-top: 1rem; margin-right: 1rem;">
+          <input type="number" placeholder="CVV">
+          <label style="display: block; margin-top: 1rem;">
+            <input type="radio" name="pay-method" id="cash">
+            <label for="cash">Espèces $</label>
+          </label>
+        </fieldset>
+        <input type="submit" class="btn btn-submit" value="Envoyer">
+        <input type="reset" class="btn btn-reset" value="Réinitialiser">
+
+    </form>
+    </div>
+    <div id="clinic-contact">
+      <h2 style="border-left:6px #204aa0 solid ; padding-left: 6px;">Contactez la clinique :</h2>
+      <p><img src="./telephone1.png" alt=""> Tell : 06 833 733</p>
+      <p><img src="./telephone1.png" alt=""> Tell : 06 833 733</p>
+      <p><img src="./smartphone.png" alt=""> Mobil : +961 71 244 244</p>
+      <p><img src="./smartphone.png" alt=""> Mobil : +961 71 244 244</p>
+    </div>
+    <div id="doctor-contact" >
+      <h2 style="border-left:6px #204aa0 solid ; padding-left: 6px;">Contactez les médecins :</h2>
+      <p><img src="./stethoscope.png" alt=""> Dr.Hassan : +961 71 244 244</p>
+      <p><img src="./stethoscope.png" alt=""> Dr.Rabee  : +961 03 345 421</p>
+      <p><img src="./stethoscope.png" alt=""> Dr.Mohammad  : +961 73 324 097</p>
+      <p><img src="./stethoscope.png" alt=""> Dr.Nawara  : +961 31 823 198</p>
+    </div>
+  </main>
+
+<footer style="background-color: #f8f8f8;">
+
+    <div id="footer">
+      <img id="footer-img" src="doctor-3.avif" alt="">
+    </div>
+    <p id="footer-p">Merci de votre visite</p>
+
+    <div id="fo">
+      <p>&copy; Clinique Médicale 2025</p>
+      <a href="https://facebook.com" target="_blank">
+      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="Facebook">
+      </a>
+      <a href="https://twitter.com" target="_blank"">
+      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/twitter.svg" alt="Twitter">
+      </a>
+      <a href="https://wa.me/your-number" target="_blank"">
+      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" alt="WhatsApp">
+      </a>
+      <a href="mailto:your.email@example.com" target="_blank">
+      <img src="gmail-logo.png" alt="Email">
+      </a>
+      <a href="https://www.linkedin.com/in/your-profile" target="_blank">
+      <img src="linkedin.png" alt="LinkedIn">
+      </a>
+    </div>
+  </footer>
+
+  <script src="index_fr.js"></script>
+</body>
+</html>

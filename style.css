@@ -168,7 +168,7 @@ article h3{
 }
 #div-main-img{
   width: 100%; height: 100%; 
-  background-image: url(/11.avif); 
+  background-image: url(./11.avif); 
   background-size: cover; 
   border-radius: 1rem;
 }
